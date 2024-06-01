@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/bloodBridge/cssFiles/dash-bank.css">
+    <script src="/bloodBridge/jsfiles/dash-bank.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Sent Requests</a></li>
+            <li><a href="#">Search Donors</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="search-section">
+            <div class="search-inputs">
+                <h1>FIND A <br> BLOOD <br> DONOR...</h1>
+                <label for="blood-type">Blood Type:</label>
+                <input type="text" id="blood-type" placeholder="Enter blood type">
+                <label for="radius">Radius (km):</label>
+                <input type="number" id="radius" placeholder="Enter radius">
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="map-placeholder">Map Placeholder</div>
+        </section>
+        <section class="results">
+            <h2>Donors Found</h2>
+            <div class="donor-list">
+                <!-- Donors will be dynamically added here -->
+            </div>
+        </section>
+    </div>
+</body>
+</html>
