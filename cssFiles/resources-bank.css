@@ -1,22 +1,49 @@
+/* Styles for the bank resources page */
 body {
     font-family: Arial, sans-serif;
     background-color: #212121; /* Dark background */
     margin: 0;
     padding: 0;
+    color: #fff;
+}
+
+nav {
+    background-color: #424242; /* Darker background for nav */
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(201, 102, 102, 0.5); /* Red glow effect */
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #fff; /* Text color */
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #ff6060; /* Red 400 */
 }
 
 .container {
     background-color: #424242; /* Dark container background */
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Lighter shadow */
-    text-align: left;
+    box-shadow: 0 0 20px rgb(201, 102, 102); /* Red glow effect */
+    text-align: center;
     animation: fadeInUp 0.5s ease forwards;
+    width: 60%;
+    margin: 40px auto;
 }
 
 h2 {
@@ -24,13 +51,21 @@ h2 {
     margin-bottom: 20px;
 }
 
-input[type="text"],
-input[type="password"],
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
 input[type="text"] {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
-    border: 1px solid #616161; /* Darker border */
+    border: 1px solid #ff9a9a; /* Red 300 */
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
@@ -53,6 +88,11 @@ button[type="submit"]:hover {
     background-color: #d13131; /* Darker red on hover */
 }
 
+#update-success {
+    margin-top: 20px;
+    color: #4caf50; /* Green success message */
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -62,13 +102,4 @@ button[type="submit"]:hover {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.container {
-    background-color: #424242; /* Dark container background */
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgb(201, 102, 102); /* Red glow effect */
-    text-align: center;
-    animation: fadeInUp 0.5s ease forwards;
 }

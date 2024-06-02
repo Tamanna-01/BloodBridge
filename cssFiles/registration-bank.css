@@ -1,3 +1,4 @@
+/* Styles for the bank registration page */
 body {
     font-family: Arial, sans-serif;
     background-color: #212121; /* Dark background */
@@ -14,9 +15,10 @@ body {
     background-color: #424242; /* Dark container background */
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Lighter shadow */
-    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    text-align: center;
     animation: fadeInUp 0.5s ease forwards;
+    max-width: 400px; /* Adjust the maximum width as needed */
 }
 
 h2 {
@@ -25,8 +27,7 @@ h2 {
 }
 
 input[type="text"],
-input[type="password"],
-input[type="text"] {
+input[type="email"] {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
@@ -47,6 +48,7 @@ button[type="submit"] {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    width: 100%; /* Button takes full width */
 }
 
 button[type="submit"]:hover {
@@ -62,13 +64,4 @@ button[type="submit"]:hover {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.container {
-    background-color: #424242; /* Dark container background */
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgb(201, 102, 102); /* Red glow effect */
-    text-align: center;
-    animation: fadeInUp 0.5s ease forwards;
 }
